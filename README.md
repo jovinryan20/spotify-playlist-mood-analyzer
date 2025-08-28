@@ -16,9 +16,13 @@ A data science project that connects to Spotify using the **Spotify Web API** an
 
 ## 📂 Project Structure
 spotify-playlist-mood-analyzer/
+
 │-- app.py # Main Python script
+
 │-- requirements.txt # Dependencies
+
 │-- README.md # Project documentation
+
 │-- .env # Stores Spotify API credentials (not uploaded to GitHub)
 
 ---
@@ -45,11 +49,13 @@ SPOTIPY_REDIRECT_URI=http://127.0.0.1:9090
 4️⃣ Run the project
 python app.py
 
-📊 Example Output
+📊 Example Output: 
+
 A bar chart showing mood distribution of songs
 Playlist data with mood classification in a Pandas DataFrame
 
-🎯 Future Enhancements
+🎯 Future Enhancements: 
+
 Add sentiment analysis using lyrics
 Build a web dashboard for interactive mood analysis
 Auto-create mood-based playlists on Spotify
