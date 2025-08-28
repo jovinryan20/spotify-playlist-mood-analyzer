@@ -56,16 +56,12 @@ Mood distribution plot will be saved in plots/mood_distribution.png
 
 **📊 Example Output**
 
-Playlist with Mood Labels
+**Playlist with Mood Labels**
 
-
-       track_name      artist_name             Mood
-0      Song A       Artist A        Happy/Energetic
-
-1      Song B       Artist B        Sad/Calm
-
-...
-
+| track_name | artist_name | Mood            |
+|------------|-------------|-----------------|
+| Song A     | Artist A    | Happy/Energetic |
+| Song B     | Artist B    | Sad/Calm        |
 
 
 **Mood Distribution Chart**
