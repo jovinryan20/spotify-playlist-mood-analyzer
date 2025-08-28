@@ -61,6 +61,7 @@ Build a web dashboard for interactive mood analysis
 Auto-create mood-based playlists on Spotify
 
 👨‍💻 Author
+
 Created by Jovin Ryan Samuel ✨
 
 If you like this project, ⭐ the repo on GitHub!
