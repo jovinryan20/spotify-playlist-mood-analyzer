@@ -58,10 +58,15 @@ Mood distribution plot will be saved in plots/mood_distribution.png
 
 Playlist with Mood Labels
 
+
        track_name      artist_name             Mood
 0      Song A       Artist A        Happy/Energetic
+
 1      Song B       Artist B        Sad/Calm
+
 ...
+
+
 
 **Mood Distribution Chart**
 
@@ -73,7 +78,7 @@ spotify-playlist-mood-analyzer/
 
 │── mood_analyzer.py       # Main script
 
-│── spotify_songs.csv      # Dataset (not included in repo)
+│── spotify_songs.csv      # Dataset 
 
 │── requirements.txt       # Dependencies
 
@@ -83,19 +88,19 @@ spotify-playlist-mood-analyzer/
 
 **✅ Requirements File (requirements.txt)**
 
-👉 pandas
+- pandas
 
-👉 matplotlib
+- matplotlib
 
-👉 seaborn
+- seaborn
 
 **🌟 Future Improvements**
 
-Build a web app (Streamlit/Dash) for interactive playlist mood analysis
+Build a web app (Streamlit/Dash) for interactive playlist mood analysis.
 
-Add Spotify API integration for live playlist analysis
+Add Spotify API integration for live playlist analysis.
 
-Improve classification with machine learning models
+Improve classification with machine learning models.
 
 **👨‍💻 Author**
 
