@@ -1,38 +1,60 @@
-# Spotify Playlist Mood Analyzer
+# 🎵 Spotify Playlist Mood Analyzer
 
-## Overview
-This project analyzes the **mood of a Spotify playlist** using real audio features like danceability, energy, valence, and tempo. The goal is to categorize each track into moods such as Happy/Energetic, Sad/Calm, or Neutral and visualize the overall playlist mood distribution.
+A data science project that connects to Spotify using the **Spotify Web API** and analyzes the mood of songs in a playlist using their audio features. The project also visualizes the distribution of moods.
 
-## Dataset
-The project uses a **Spotify songs dataset** from Kaggle:
-[Ultimate Spotify Tracks DB](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db)
+---
 
-- `track_name`
-- `artist_name`
-- `danceability`
-- `energy`
-- `valence`
-- `tempo`
+## 🚀 Features
+- Connects to Spotify using your account credentials
+- Fetches songs from any public Spotify playlist
+- Extracts **audio features** like danceability, energy, tempo, etc.
+- Classifies songs into moods (Happy, Sad, Energetic, Calm)
+- Visualizes results with **matplotlib** and **seaborn**
+- Can be easily customized for your own playlists
 
-## Features
-- Assigns a **mood label** to each song based on valence and energy.
-- Visualizes **mood distribution** using a bar chart.
-- Fully reproducible without Spotify API (avoids 403 errors).
+---
 
-## How to Run
-1. Clone this repository
-2. Install required libraries:
-    pip install -r requirements.txt
-3. Run the app:
+## 📂 Project Structure
+spotify-playlist-mood-analyzer/
+│-- app.py # Main Python script
+│-- requirements.txt # Dependencies
+│-- README.md # Project documentation
+│-- .env # Stores Spotify API credentials (not uploaded to GitHub)
+
+---
+
+## 🛠 Installation & Setup
+
+### 1️⃣ Clone the repository
+
+git clone https://github.com/YOUR_USERNAME/spotify-playlist-mood-analyzer.git
+cd spotify-playlist-mood-analyzer
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Set up Spotify API
+Go to Spotify Developer Dashboard
+Create a new application
+Get your Client ID and Client Secret
+Create a .env file in the project root with:
+SPOTIPY_CLIENT_ID=your_client_id
+SPOTIPY_CLIENT_SECRET=your_client_secret
+SPOTIPY_REDIRECT_URI=http://127.0.0.1:9090
+
+4️⃣ Run the project
 python app.py
-4. A bar chart will appear showing the playlist mood distribution.
 
-## Example Output
+📊 Example Output
+A bar chart showing mood distribution of songs
+Playlist data with mood classification in a Pandas DataFrame
 
-Track Name Artist Name Mood
+🎯 Future Enhancements
+Add sentiment analysis using lyrics
+Build a web dashboard for interactive mood analysis
+Auto-create mood-based playlists on Spotify
 
-Song 1 Artist A Happy/Energetic
-Song 2 Artist B Sad/Calm
-...
+👨‍💻 Author
+Created by Jovin Ryan Samuel ✨
 
-A bar chart is also generated and saved in `plots/mood_distribution.png`.
+If you like this project, ⭐ the repo on GitHub!
