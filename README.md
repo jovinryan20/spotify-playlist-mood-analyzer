@@ -1,78 +1,100 @@
-# 🎵 Spotify Playlist Mood Analyzer
+# 🎵 Spotify Playlist Mood Analyzer  
 
-A data science project that connects to Spotify using the **Spotify Web API** and analyzes the mood of songs in a playlist using their audio features. The project also visualizes the distribution of moods.
-
----
-
-## 🚀 Features
-- Connects to Spotify using your account credentials
-- Fetches songs from any public Spotify playlist
-- Extracts **audio features** like danceability, energy, tempo, etc.
-- Classifies songs into moods (Happy, Sad, Energetic, Calm)
-- Visualizes results with **matplotlib** and **seaborn**
-- Can be easily customized for your own playlists
+A data-driven project that analyzes songs from a Spotify dataset and classifies them into mood categories such as **Happy/Energetic, Happy/Calm, Angry/Energetic, Sad/Calm, and Neutral**.  
+The project also provides a simple **visualization of mood distribution** within a randomly generated playlist.  
 
 ---
 
-## 📂 Project Structure
-spotify-playlist-mood-analyzer/
-
-│-- app.py # Main Python script
-
-│-- requirements.txt # Dependencies
-
-│-- README.md # Project documentation
-
-│-- .env # Stores Spotify API credentials (not uploaded to GitHub)
+## 📌 Features
+- Loads a Spotify songs dataset (`spotify_songs.csv`)
+- Extracts relevant audio features:  
+  - `danceability`  
+  - `energy`  
+  - `valence`  
+  - `tempo`  
+- Simulates a playlist by sampling random songs
+- Assigns **mood labels** to each track based on energy and valence
+- Generates a **bar chart** of mood distribution
+- Saves visualization in the `plots/` folder
 
 ---
 
-## 🛠 Installation & Setup
+## 🛠️ Tech Stack
+- **Python 3.8+**
+- **Pandas** – data manipulation  
+- **Matplotlib** – plotting  
+- **Seaborn** – visualization  
 
-### 1️⃣ Clone the repository
+---
 
-git clone https://github.com/YOUR_USERNAME/spotify-playlist-mood-analyzer.git
-cd spotify-playlist-mood-analyzer
+## 🚀 How to Run
 
-2️⃣ Install dependencies: 
+1. **Clone the repository**
+
+   git clone https://github.com/<your-username>/spotify-playlist-mood-analyzer.git
+   cd spotify-playlist-mood-analyzer
+
+Install dependencies
+
 pip install -r requirements.txt
 
-3️⃣ Set up Spotify API
+Add the dataset
 
-Go to Spotify Developer Dashboard
+Place spotify_songs.csv inside the project folder.
+(Dataset can be downloaded from Kaggle: Spotify Songs Dataset)
 
-Create a new application
+Run the script
 
-Get your Client ID and Client Secret
+python mood_analyzer.py
 
-Create a .env file in the project root with:
+View output
 
-SPOTIPY_CLIENT_ID=your_client_id
+Console will display playlist with mood labels
 
-SPOTIPY_CLIENT_SECRET=your_client_secret
+Mood distribution plot will be saved in plots/mood_distribution.png
 
-SPOTIPY_REDIRECT_URI=http://127.0.0.1:9090
 
-4️⃣ Run the project: (python)
+📊 Example Output
 
-app.py
+Playlist with Mood Labels
 
-📊 Example Output: 
+       track_name      artist_name             Mood
+0      Song A       Artist A        Happy/Energetic
+1      Song B       Artist B        Sad/Calm
+...
 
-A bar chart showing mood distribution of songs
+Mood Distribution Chart
 
-Playlist data with mood classification in a Pandas DataFrame
+<img src="plots/mood_distribution.png" alt="Mood Distribution" width="500">
 
-🎯 Future Enhancements: 
+📂 Project Structure
 
-Add sentiment analysis using lyrics
+spotify-playlist-mood-analyzer/
 
-Build a web dashboard for interactive mood analysis
+│── mood_analyzer.py       # Main script
 
-Auto-create mood-based playlists on Spotify
+│── spotify_songs.csv      # Dataset (not included in repo)
+
+│── requirements.txt       # Dependencies
+
+│── plots/                 # Folder for output visualizations
+
+│── README.md              # Project documentation
+
+✅ Requirements File (requirements.txt)
+
+pandas
+
+matplotlib
+
+seaborn
+
+🌟 Future Improvements
+Build a web app (Streamlit/Dash) for interactive playlist mood analysis
+
+Add Spotify API integration for live playlist analysis
+
+Improve classification with machine learning models
 
 👨‍💻 Author
-
-Created by Jovin Ryan Samuel ✨
-
-If you like this project, ⭐ the repo on GitHub!
+Developed by Jovin Ryan Samuel ✨
