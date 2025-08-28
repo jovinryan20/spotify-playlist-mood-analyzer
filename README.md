@@ -34,27 +34,27 @@ The project also provides a simple **visualization of mood distribution** within
    git clone https://github.com/<your-username>/spotify-playlist-mood-analyzer.git
    cd spotify-playlist-mood-analyzer
 
-Install dependencies
+**Install dependencies**
 
 pip install -r requirements.txt
 
-Add the dataset
+**Add the dataset**
 
 Place spotify_songs.csv inside the project folder.
 (Dataset can be downloaded from Kaggle: Spotify Songs Dataset)
 
-Run the script
+**Run the script**
 
 python mood_analyzer.py
 
-View output
+**View output**
 
 Console will display playlist with mood labels
 
 Mood distribution plot will be saved in plots/mood_distribution.png
 
 
-📊 Example Output
+**📊 Example Output**
 
 Playlist with Mood Labels
 
@@ -63,11 +63,11 @@ Playlist with Mood Labels
 1      Song B       Artist B        Sad/Calm
 ...
 
-Mood Distribution Chart
+**Mood Distribution Chart**
 
 <img src="plots/mood_distribution.png" alt="Mood Distribution" width="500">
 
-📂 Project Structure
+**📂 Project Structure**
 
 spotify-playlist-mood-analyzer/
 
@@ -81,20 +81,22 @@ spotify-playlist-mood-analyzer/
 
 │── README.md              # Project documentation
 
-✅ Requirements File (requirements.txt)
+**✅ Requirements File (requirements.txt)**
 
-pandas
+👉 pandas
 
-matplotlib
+👉 matplotlib
 
-seaborn
+👉 seaborn
 
-🌟 Future Improvements
+**🌟 Future Improvements**
+
 Build a web app (Streamlit/Dash) for interactive playlist mood analysis
 
 Add Spotify API integration for live playlist analysis
 
 Improve classification with machine learning models
 
-👨‍💻 Author
-Developed by Jovin Ryan Samuel ✨
+**👨‍💻 Author**
+
+Developed by **Jovin Ryan Samuel** ✨
